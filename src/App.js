@@ -19,6 +19,7 @@ const gridStyles = makeStyles((theme) => ({
   root: {
     flexGrow: 1,
     marginTop:25,
+    height:'100%'
   },
 
   control: {
@@ -105,12 +106,12 @@ function App() {
         </Grid>
       </div>
 
-      <Grid container className={gridclasses.root} spacing={2}>
-      <Grid item xs={12}>
-        <Grid container justifyContent="center" spacing={3}>
+      <Grid container className={gridclasses.root} spacing={2} >
+      <Grid item xs={12} >
+        <Grid container justifyContent="center" spacing={3} style={{height:"100%"}}>
           {hitRecipes && hitRecipes.map((item,index )=> (
             <Grid key={index} item>
-              <Card className={cardclasses.root}>
+              <Card className={cardclasses.root} style={{height:"100%"}}>
                 
                 <CardMedia
                   className={cardclasses.media}
